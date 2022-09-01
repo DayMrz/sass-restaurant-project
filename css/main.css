@@ -14,7 +14,7 @@ body {
   color: #d3ab55;
   font-size: 4.3em;
   height: 110px;
-  margin-right: .5em;
+  margin-right: .5rem;
   width: 110px; }
 
 .main-name {
@@ -39,7 +39,31 @@ body {
   font-family: "Dancing Script", cursive;
   font-size: 6.25em;
   font-weight: 300;
-  margin-bottom: 2.5em; }
+  margin-bottom: 2.5rem; }
+
+.sub-heading {
+  color: #bbb;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.75em;
+  font-weight: 300;
+  margin-bottom: 5rem; }
+
+.main-btn {
+  background-color: transparent;
+  border: 1px solid #d3ab55;
+  color: #d3ab55;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: .8em;
+  height: 45px;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all .3s;
+  text-transform: uppercase;
+  width: 170px; }
+  .main-btn:hover {
+    background-color: #d3ab55;
+    color: #262626; }
 
 .header {
   background-size: cover;
@@ -60,6 +84,4 @@ body {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    letter-spacing: 3; }
+    text-align: center; }

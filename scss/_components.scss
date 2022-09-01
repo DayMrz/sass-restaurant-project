@@ -5,7 +5,7 @@
   color: $color-primary;
   font-size: 4.3em;
   height: 110px;
-  margin-right: .5em;
+  margin-right: .5rem;
   width: 110px;
 }
 
@@ -29,9 +29,33 @@
   font-family: $font-dancingScript;
   font-size: 6.25em;
   font-weight: 300;
-  margin-bottom: 2.5em;
+  margin-bottom: 2.5rem;
 }
 
-// .sub-heading {
+.sub-heading {
+  color: $color-secondary;
+  font-family: $font-josefinSans;
+  font-size: 3.75em;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
 
-// }
+.main-btn {
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  cursor: pointer;
+  font-family: $font-josefinSans;
+  font-size: .8em;
+  height: 45px;
+  letter-spacing: 1px;
+  outline: none;
+  transition: all .3s;
+  text-transform: uppercase;
+  width: 170px;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
+}
