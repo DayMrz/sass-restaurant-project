@@ -17,3 +17,51 @@
     text-align: center;
   }
 }
+
+.about-us {
+  align-items: center;
+  display: flex;
+  height: 90vh;
+
+  &-left {
+    left: -200px;
+    position: relative;
+    width: 40%;
+
+    img {
+      opacity: .7;
+      width: 100%;
+    }
+  }
+
+  &-right {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6.25rem;
+    width: 60%;
+
+    .stars {
+      margin: 1.8rem;
+    }
+
+    .star {
+      font-size: 1em;
+      color: $color-primary;
+      margin-left: .6rem;
+    }
+    
+    .description {
+      font-family: $font-josefinSans;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: $color-secondary;
+      text-align: justify;
+
+      &::first-letter {
+        padding-left: 3.1rem;
+      }
+    }
+  }
+}

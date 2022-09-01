@@ -85,3 +85,36 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.about-us {
+  align-items: center;
+  display: flex;
+  height: 90vh; }
+  .about-us-left {
+    left: -200px;
+    position: relative;
+    width: 40%; }
+    .about-us-left img {
+      opacity: .7;
+      width: 100%; }
+  .about-us-right {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6.25rem;
+    width: 60%; }
+    .about-us-right .stars {
+      margin: 1.8rem; }
+    .about-us-right .star {
+      font-size: 1em;
+      color: #d3ab55;
+      margin-left: .6rem; }
+    .about-us-right .description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #bbb;
+      text-align: justify; }
+      .about-us-right .description::first-letter {
+        padding-left: 3.1rem; }
