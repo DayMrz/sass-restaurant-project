@@ -21,8 +21,8 @@ $font-nunito: 'Nunito', sans-serif;
 
 @mixin centering($topValue) {
   left: 50%;
-  top: $topValue;
   position: absolute;
+  top: $topValue;
   transform: translate(-50%, -50%);
 }
 

@@ -14,7 +14,7 @@ body {
   color: #d3ab55;
   font-size: 4.3em;
   height: 110px;
-  margin-right: 20px;
+  margin-right: .5em;
   width: 110px; }
 
 .main-name {
@@ -34,6 +34,13 @@ body {
   color: #bbb;
   text-align: center; }
 
+.main-heading {
+  color: #d3ab55;
+  font-family: "Dancing Script", cursive;
+  font-size: 6.25em;
+  font-weight: 300;
+  margin-bottom: 2.5em; }
+
 .header {
   background-size: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/bg.jpeg) center no-repeat;
@@ -42,14 +49,16 @@ body {
   width: 100%; }
   .header .brand {
     left: 50%;
-    top: 15%;
     position: absolute;
+    top: 15%;
     transform: translate(-50%, -50%);
     align-items: center;
-    display: flex;
-    color: white; }
+    color: #fff;
+    display: flex; }
   .header-banner {
     left: 50%;
-    top: 50%;
     position: absolute;
-    transform: translate(-50%, -50%); }
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }

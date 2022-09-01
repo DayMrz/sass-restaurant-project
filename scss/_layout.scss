@@ -6,13 +6,15 @@
   width: 100%;
   
   .brand {
-    @include centering(15%)
+    @include centering(15%);
     align-items: center;
+    color: #fff;
     display: flex;
-    color: white;
   }
 
   &-banner {
-  @include centering(50%);
+    @include centering(50%);
+    color: #fff;
+    text-align: center;
   }
 }
