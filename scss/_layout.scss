@@ -8,7 +8,7 @@
   .brand {
     @include centering(15%);
     align-items: center;
-    color: #fff;
+    color: $color-white;
     display: flex;
   }
 

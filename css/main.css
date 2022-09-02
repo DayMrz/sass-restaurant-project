@@ -1,3 +1,7 @@
+.card-overlay, .card-img {
+  width: 100%;
+  height: 100%; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -70,11 +74,48 @@ body {
   height: 30vw;
   position: relative;
   overflow: hidden; }
+  .card:hover .card-overlay {
+    left: 0; }
   .card-overlay {
-    position: absolute; }
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(211, 171, 85, 0.6);
+    color: #fff;
+    flex-direction: column;
+    left: -100%;
+    position: absolute;
+    top: 0;
+    transition: left .7s;
+    z-index: 10; }
+    .card-overlay-heading {
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      font-family: "Nunito", sans-serif;
+      font-size: 3.1em; }
+    .card-overlay-paragraph {
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.8em;
+      margin-bottom: 1.8em; }
+    .card-overlay-btn {
+      background-color: #fff;
+      border: 1px solid #d3ab55;
+      border-radius: 30px;
+      color: #d3ab55;
+      cursor: pointer;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: .9em;
+      font-weight: bold;
+      height: 40px;
+      letter-spacing: 1px;
+      outline: none;
+      text-transform: uppercase;
+      width: 150px; }
   .card-img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     opacity: .5; }
 
