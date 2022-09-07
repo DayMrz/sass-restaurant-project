@@ -176,3 +176,36 @@ body {
 .gallery .cards-wrapper {
   display: flex;
   flex-wrap: wrap; }
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4.3rem; }
+  .footer-header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 4.3rem; }
+  .footer .social-media {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 4.3rem;
+    width: 300px; }
+    .footer .social-media-link {
+      text-decoration: none; }
+    .footer .social-media .fab {
+      color: #bbb;
+      cursor: pointer;
+      font-size: 3.1em;
+      transition: color .3s; }
+      .footer .social-media .fab:hover {
+        color: #d3ab55; }
+  .footer-copyright-paragraph {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #bbb;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1em; }
