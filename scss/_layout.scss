@@ -1,7 +1,3 @@
-.left-img {
-  width: 300px;
-}
-
 .navbar {
   position: relative;
   z-index: 2;
@@ -10,40 +6,63 @@
     display: flex;
 
     &-left {
+      @include navPosition;
       background-color: $color-dark;
-      height: 100vh;
       left: 0;
-      position: fixed;
-      width: 50vw;
 
       .left-img {
-        position: absolute;
-        width: 50%;
+        border-radius: 10px;
         box-shadow: 0 15px 60px rgba($color-black, .4);
         opacity: .7;
-        border-radius: 10px;
+        position: absolute;
+        width: 50%;
+
       }
 
       .left-img-1 {
-        left: 15%;
-        top: 15%;
-      }
-      .left-img-2 {
-        left: 25%;
+        left: 10%;
         top: 25%;
       }
+
+      .left-img-2 {
+        left: 20%;
+        top: 40%;
+      }
+
       .left-img-3 {
-        left: 35%;
-        top: 35%;
+        left: 30%;
+        top: 55%;
       }
     }
 
     &-right {
+      @include navPosition;
+      @include flexLayout;
       background-color: #1f1d1d;
-      height: 100vh;
-      position: fixed;
       right: 0;
-      width: 50vw;
+    }
+    
+    .nav-list {
+      &-item {
+        list-style: none;
+      }
+
+      &-link {
+        @include textStyles(capitalize);
+        color: $color-secondary;
+        display: block;
+        font-family: $font-dancingScript;
+        font-size: 3.1em;
+        margin: 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: all .5s;
+
+        &:hover {
+          color: $color-primary;
+          letter-spacing: 4px;
+        }
+      }
     }
   }
 }

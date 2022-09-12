@@ -28,6 +28,13 @@ $font-nunito: 'Nunito', sans-serif;
   transform: translate(-50%, -50%);
 }
 
+@mixin navPosition {
+  width: 50vw;
+  position: fixed;
+  height: 100vh;
+}
+
+
 %fullSpace {
   width: 100%;
   height: 100%;
