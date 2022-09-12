@@ -8,7 +8,7 @@
     &-left {
       @include navPosition;
       background-color: $color-dark;
-      left: 0;
+      left: -50vw;
 
       .left-img {
         border-radius: 10px;
@@ -39,7 +39,7 @@
       @include navPosition;
       @include flexLayout;
       background-color: #1f1d1d;
-      right: 0;
+      right: -50vw;
     }
     
     .nav-list {
