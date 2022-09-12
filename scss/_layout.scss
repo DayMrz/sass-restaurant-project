@@ -1,3 +1,53 @@
+.left-img {
+  width: 300px;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+
+  &-navigation {
+    display: flex;
+
+    &-left {
+      background-color: $color-dark;
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      width: 50vw;
+
+      .left-img {
+        position: absolute;
+        width: 50%;
+        box-shadow: 0 15px 60px rgba($color-black, .4);
+        opacity: .7;
+        border-radius: 10px;
+      }
+
+      .left-img-1 {
+        left: 15%;
+        top: 15%;
+      }
+      .left-img-2 {
+        left: 25%;
+        top: 25%;
+      }
+      .left-img-3 {
+        left: 35%;
+        top: 35%;
+      }
+    }
+
+    &-right {
+      background-color: #1f1d1d;
+      height: 100vh;
+      position: fixed;
+      right: 0;
+      width: 50vw;
+    }
+  }
+}
+
 .header {
   background-size: cover;
   background: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)), url(../images/bg.jpeg) center no-repeat;
